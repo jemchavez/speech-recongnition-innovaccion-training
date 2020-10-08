@@ -23,10 +23,10 @@ namespace HelloWorld
         {
             // Configuración de la información del recurso para acceder a el.
             // Usa la key1 o la key2 del recurso Speech Service que has creado
-            var config = SpeechConfig.FromSubscription("TU_KEY_DE_COGNITIVE_SERVICE", "LOCALIZACION_DEL_RECURSO");
+            var config = SpeechConfig.FromSubscription("daa723a816a240dfa67b332a08d42a6c", "southcentralus");
 
             // Carga el archivo de audio quq usarás. En esta ocasión desde un archivo local
-            using (var audioInput = AudioConfig.FromWavFileInput("NOMBRE_ARCHIVO.wav"))
+            using (var audioInput = AudioConfig.FromWavFileInput("narration.wav"))
 
             // Aquí le pasas en parametros que necesita el Speech Service junto con el archivo audio
             using (var recognizer = new SpeechRecognizer(config, audioInput))
